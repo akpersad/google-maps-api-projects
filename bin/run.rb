@@ -1,3 +1,3 @@
-require_relative '../config/environment'
+require_relative '../lib/Google_Directions.rb'
 
-ExampleCLI.new.call
+GoogleDirections.new.call
