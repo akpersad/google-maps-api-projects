@@ -1,3 +1,3 @@
-require_relative '../lib/Google_Directions.rb'
+require_relative '../config/environment'
 
-GoogleDirections.new.call
+Runner.new.call
