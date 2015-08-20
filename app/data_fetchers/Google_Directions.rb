@@ -14,8 +14,7 @@ class GoogleDirections
 		# api_key = keys['API_Key']
 		@origin = "origin=#{origin.gsub(/[\s,-.]/, "")}"
 		@destination = "destination=#{destination.gsub(/[\s,-.]/, "")}"		
-		@url = @@base_url + @origin + "&" + @destination + "&mode=transit&key=AIzaSyAV97YuJ8xutbhbNLwuvlToPYmHlU9owjg"
-		# binding.pry
+		@url = @@base_url + @origin + "&" + @destination + "&mode=transit&key="
 
 		json_parse
 	end
