@@ -14,7 +14,7 @@ class GoogleDirections
 		# api_key = keys['API_Key']
 		@origin = "origin=#{origin.gsub(/[\s,-.]/, "")}"
 		@destination = "destination=#{destination.gsub(/[\s,-.]/, "")}"		
-		@url = @@base_url + @origin + "&" + @destination + "&mode=transit&key="
+		@url = @@base_url + @origin + "&" + @destination + "&mode=transit&key=AIzaSyAV97YuJ8xutbhbNLwuvlToPYmHlU9owjg"
 		# binding.pry
 
 		json_parse
@@ -54,7 +54,7 @@ class GoogleDirections
 			end
 		else
 			puts "You have entered an invalid address. Please go away."
-			sleep 1
+			sleep 2
 			Runner.new.call
 			# binding.pry	
 		end

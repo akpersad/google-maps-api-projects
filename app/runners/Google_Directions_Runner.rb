@@ -17,25 +17,23 @@ class Runner
 	def run
 	puts "Please enter your where you will start your trip."
 	start_trip = gets.chomp.downcase
-		if start_trip == "help"
-			puts "Please enter where you would like to start your trip."
+		while start_trip == "help"
+			puts "*Please enter where you would like to start your trip.*"
+			puts "*Type 'Exit' if you want to exit the program.*"
 			start_trip = gets.chomp.downcase
-		elsif start_trip == "exit"
+		end
+		if start_trip == "exit"
 			abort("BYE!")
 		end
 	puts "Thanks! Where do you plan to go?"
 	end_trip = gets.chomp.downcase
-		if end_trip == "Please enter where you would like to go."
-			puts "Hello"
+		while end_trip == "help"
+			puts "*Please enter where you would like to go.*"
+			puts "*Type 'Exit' if you want to exit the program.*"
 			end_trip = gets.chomp.downcase
-		elsif end_trip == "exit"
-			abort("BYE!")
 		end
-		if end_trip == 'Go Back'
-			puts "Please enter your where you will start your trip from."
-			start_trip = gets.chomp
-			puts "Thanks! Where do you plan to go?"
-		end_trip = gets.chomp
+		if end_trip == "exit"
+			abort("BYE!")
 		end
 	GoogleDirections.new(start_trip, end_trip)	
 	end
