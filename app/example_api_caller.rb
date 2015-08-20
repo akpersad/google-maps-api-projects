@@ -21,4 +21,3 @@ class SpotifyChart
   end
 
 end
-x

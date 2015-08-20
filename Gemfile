@@ -12,3 +12,11 @@ end
 group "test" do
   gem "rspec"
 end
+
+gem 'rest-client'
+
+gem 'json'
+
+# gem 'openssl'
+
+# gem 'yaml'
