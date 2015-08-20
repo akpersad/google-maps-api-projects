@@ -17,4 +17,6 @@ gem 'rest-client'
 
 gem 'json'
 
+# gem 'openssl'
+
 # gem 'yaml'
